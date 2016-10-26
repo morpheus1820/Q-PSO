@@ -8,16 +8,20 @@ This is an early GPU implementation, includes object segmentation from https://a
 
 - - - -
 Hardware:
+
 Requires a CUDA enabled GPU (CUDA 7.0)
 
 Sofware:
+
 -OpenCV
 -gcc with support for c++11
 
 Compile:
+
 make
 
 Run (on the first 15 detected object clusters):
+
 for N in {0..15}
 do
   ./main object_model rgb_image depth_image $N
