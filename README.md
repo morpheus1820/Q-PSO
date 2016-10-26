@@ -22,10 +22,13 @@ Compile:
 
 Run (on the first 15 detected object clusters):
 
-``for N in {0..15}
+`for N in {0..15}
+
 do
+
   ./main object_model rgb_image depth_image $N
-done```
+
+done`
 
 
     
