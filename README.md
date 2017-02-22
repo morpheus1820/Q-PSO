@@ -1,10 +1,11 @@
 ## Fast Feature-Less Quaternion-based Particle Swarm Optimization for Object Pose Estimation From RGB-D Images
 
 
-The code in this repository is related to the paper:
+The code in this repository is related to the original paper:
 http://www.bmva.org/bmvc/2016/papers/paper113/
+and includes some improvements.
 
-This is an early GPU implementation, includes object segmentation from https://arxiv.org/abs/1605.03746
+This is the GPU implementation, which includes object segmentation from https://arxiv.org/abs/1605.03746
 
 - - - -
 Hardware:
