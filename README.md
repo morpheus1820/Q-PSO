@@ -27,3 +27,5 @@ Run (on the first 15 detected object clusters):
 do;
 ./main object_model rgb_image depth_image $N;
 done`
+
+For tuning object segmentation parameters for different datasets, it could be useful to use the code from https://github.com/morpheus1820/graph-canny-segm
