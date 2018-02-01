@@ -10,22 +10,25 @@ This is the GPU implementation, which includes object segmentation from https://
 - - - -
 Hardware:
 
-Requires a CUDA enabled GPU (CUDA 7.0)
+Requires a CUDA enabled GPU (with support for CUDA 7.0 or greater)
 
 Sofware:
 
--OpenCV
--gcc with support for c++11
+* OpenCV
+* gcc with support for c++11
 
 Compile:
 
 `make`
 
-Run (on the first 15 detected object clusters):
+Run (estimate the pose of the first 15 detected object clusters):
 
 `for N in {0..15};
 do;
 ./main object_model rgb_image depth_image $N;
 done`
 
-For tuning object segmentation parameters for different datasets, it could be useful to use the code from https://github.com/morpheus1820/graph-canny-segm
+Where rgb_image and depth_image are 640x480 png images.
+
+For tuning the object segmentation parameters for different datasets, it could be useful to use the code from https://github.com/morpheus1820/graph-canny-segm
+
